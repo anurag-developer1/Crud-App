@@ -1,0 +1,84 @@
+.sidebar {
+  margin: 0;
+  padding: 10px;
+  background-color: #121C3E;
+  color: white;
+  width: 20vw;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+
+  .admin {
+    
+    padding: 20px 0 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      transform: scale(0.8); // Adjust this value to scale down (less than 1) or up (greater than 1)
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .role {
+      font-size: 15px;
+    }
+  }
+
+  .nav-buttons {
+    padding: 10px;
+    border: none;
+    
+    background-color: #121C3E;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    gap: 20px;
+    border-radius: 6px;
+
+    .message-count {
+      background-color: #FF4444; // Bright red background
+      color: white;
+      padding: 2px 8px;
+      border-radius: 10px; // Round corners
+      font-size: 12px;
+      font-weight: 600;
+      min-width: 20px; // Minimum width to ensure circular shape for single digits
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto; // This will push the count to the right
+    }
+
+    svg {
+      transform: scale(0.7); // Scale down the navigation icons
+      
+      path {
+        fill: #fff;
+        transition: fill 0.3s ease;
+      }
+    }
+ 
+
+    &:hover {
+      background-color: #FFC20E;
+      color: #000000;
+
+      svg path {
+        fill:#000000;
+      }
+    }
+    
+  }
+}
